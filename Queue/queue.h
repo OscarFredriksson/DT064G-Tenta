@@ -1,8 +1,6 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
-#include <vector>
-
 template<typename T>
 class Queue
 {
