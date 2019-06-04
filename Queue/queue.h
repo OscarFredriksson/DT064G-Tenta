@@ -9,13 +9,17 @@ public:
 
     void enqueue(T value)
     {
-        if(!front) front = new Node(value);
+        if(!front)
+        {
+            front = new Node(value);
+            back = front;
+        } 
         else
         {
-            Node* prev = front;
+            Node* prev = back;
             
-            front = new Node(value);
-            front->prev = prev;
+            back = new Node(value);
+            prev->prev = back;
         }
         
     }
@@ -56,6 +60,7 @@ private:
     };
 
     Node* front = nullptr;
+    Node* back = nullptr;
 };
 
 #endif

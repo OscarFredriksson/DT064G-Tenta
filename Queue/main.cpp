@@ -14,7 +14,7 @@ int main()
 
     queue.dequeue();
 
-    queue.enqueue(12342);
+    queue.enqueue(12);
 
     std::cout << "\n";
     queue.print_queue();
